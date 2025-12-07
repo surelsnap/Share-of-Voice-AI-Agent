@@ -133,9 +133,3 @@ Edit `config.py` to customize:
 - Number of results to analyze
 - Enabled platforms
 - Output directories
-
-## 🎓 Author
-
-Created as part of Atomberg's AI Internship Problem Statement solution.
-
-
