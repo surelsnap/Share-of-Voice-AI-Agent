@@ -2,7 +2,7 @@
 
 An intelligent AI agent that analyzes Share of Voice (SoV) for Atomberg across multiple platforms including Google, YouTube, Instagram, and X (Twitter).
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Build an AI agent that:
 - Searches for "smart fan" and related keywords on Google/YouTube/Instagram/X
@@ -11,7 +11,7 @@ Build an AI agent that:
 - Provides sentiment analysis and Share of Positive Voice
 - Generates actionable insights and recommendations
 
-## 🚀 Features
+##  Features
 
 ### Core Features
 - **Multi-Platform Search**: YouTube (primary) and Google (secondary) with enhanced metrics
@@ -34,13 +34,13 @@ Build an AI agent that:
 5. **ROI-Focused Content Recommendation Engine**: Predicts content ROI and helps prioritize marketing investments
 6. **Brand Perception Gap Analyzer**: Compares intended messaging with actual market perception
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.8+
 - Internet connection for API calls
-- (Optional) API keys for production mode
+- API keys for production mode
 
-## 🛠️ Installation
+##  Installation
 
 1. Clone the repository:
 ```bash
@@ -91,7 +91,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 GOOGLE_CSE_ID=your_custom_search_engine_id_here
 ```
 
-## 🎮 Usage
+##  Usage
 
 Run the main script:
 ```bash
@@ -109,43 +109,7 @@ The agent will:
 4. Create visualizations
 5. Save comprehensive JSON results
 
-## 📁 Project Structure
-
-```
-atomberg/
-├── main.py                    # Entry point
-├── config.py                  # Configuration settings
-├── sov_agent.py              # Main AI agent orchestrator
-├── search_engines.py         # Platform search with enhanced YouTube metrics
-├── sov_calculator.py         # SoV calculations with 4-metric formula
-├── sentiment_analyzer.py     # Sentiment analysis engine (includes comments)
-├── cross_keyword_analyzer.py # Cross-keyword analysis and gap identification
-├── insights_generator.py     # Insights with content gap analysis
-├── sov_forecaster.py         # Predictive SoV forecasting engine
-├── content_gap_heatmap.py    # Content gap heatmap generator
-├── viral_deconstructor.py    # Viral content deconstruction engine
-├── realtime_alerts.py        # Real-time opportunity alert system
-├── roi_recommender.py        # ROI-focused content recommendation engine
-├── perception_gap_analyzer.py # Brand perception gap analyzer
-├── requirements.txt          # Python dependencies
-├── README.md                 # This file
-└── output/                   # Generated results
-    ├── sov_analysis_results.json
-    └── visualizations/
-```
-
-## 📊 SoV Metrics Explained
-
-The agent calculates SoV using a comprehensive weighted formula as per implementation guide:
-
-**SoV = (0.4 × Presence) + (0.3 × Engagement) + (0.2 × Sentiment) + (0.1 × Dominance)**
-
-- **Presence Score (40%)**: Brand mentions in titles/descriptions
-- **Engagement Score (30%)**: Views, likes, comments normalized by video age
-- **Sentiment Score (20%)**: Share of positive sentiment mentions
-- **Dominance Score (10%)**: Ranking position in search results (higher position = higher score)
-
-## 📈 Output
+##  Output
 
 The agent generates:
 - `output/sov_analysis_results.json`: Complete analysis data including all advanced AI features
@@ -161,7 +125,7 @@ The JSON output includes:
 - **ROI Recommendations**: Content ideas with predicted ROI and resource optimization
 - **Perception Gap Analysis**: Messaging alignment and brand perception insights
 
-## 🔧 Configuration
+##  Configuration
 
 Edit `config.py` to customize:
 - Search keywords
@@ -170,58 +134,8 @@ Edit `config.py` to customize:
 - Enabled platforms
 - Output directories
 
-## 📝 Two-Pager Document
-
-The generated PDF contains:
-- **Page 1**: Technical documentation (tech stack, architecture, setup)
-- **Page 2**: Findings and recommendations for Atomberg's marketing team
-
-## 🤝 Contributing
-
-This is a solution for Atomberg's AI Internship Problem Statement. For improvements or suggestions, please create an issue or pull request.
-
-## 📄 License
-
-This project is created for Atomberg's AI Internship assessment.
-
-## 🔗 Additional Resources
-
-- GitHub Repository: [Link to be added]
-- Demo: [Link to be added]
-- Documentation: See `output/two_pager_report.pdf`
-
-## 🔧 Dual Mode Operation
-
-The agent supports two modes:
-
-### Demo Mode (Default)
-- **No API keys required** - works immediately
-- Uses mock data to demonstrate all features
-- Perfect for testing, development, and understanding functionality
-- All AI features work with simulated data
-
-### Production Mode
-- **Requires API keys** (see installation instructions above)
-- Fetches real search results from Google and YouTube
-- Collects actual comments using YouTube Data API v3
-- Provides accurate engagement metrics and sentiment analysis
-- Ideal for production analysis and reporting
-
-**Mode Detection:**
-- The agent automatically detects which mode to use based on API key configuration
-- If at least one API key is present → Production Mode
-- If no API keys → Demo Mode
-- Clear indicators show which mode is active during execution
-
-## ⚠️ Notes
-
-- **Demo Mode**: Uses mock data - perfect for testing and demonstrations
-- **Production Mode**: Requires valid API keys for real data
-- Rate limiting is implemented to respect platform APIs
-- YouTube Data API v3 has daily quotas (10,000 units/day for free tier)
-- Google Custom Search API has daily limits (100 queries/day for free tier)
-
 ## 🎓 Author
 
 Created as part of Atomberg's AI Internship Problem Statement solution.
+
 
